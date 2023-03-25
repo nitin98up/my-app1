@@ -18,4 +18,5 @@ export class AppComponent {
     txtChange(): void{
     this.name = 'changed';
     }
+    isDisabled:boolean=false;
 }
