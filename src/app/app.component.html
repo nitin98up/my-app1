@@ -3,5 +3,6 @@
 
 <p>{{empList}}</p>
 
-<input type="text" (change) ="txtChange()">
+<input type="text" (change)="txtChange()"  [class.success]="isDisabled"> <br/>
+<input type="text" (change) ="txtChange()" [class]="myClass">
 <input type="button" value="Save" (click)="clickSave()" (mouseover)="over()" [disabled]="isDisabled">

@@ -7,16 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app1';
-  name: string="Nitin";
-  empList:string[]=['jon','don','ron'];
-  clickSave(): void{
+  name: string = "Nitin";
+  empList: string[] = ['jon', 'don', 'ron'];
+  clickSave(): void {
     this.name = 'nitish updated'
-    }
-    over(): void{
+  }
+  over(): void {
     this.name = 'nitish over';
-    }
-    txtChange(): void{
+  }
+  txtChange(): void {
     this.name = 'changed';
-    }
-    isDisabled:boolean=false;
+  }
+  isDisabled: boolean = true;
+  myClass = "success height20"
 }
