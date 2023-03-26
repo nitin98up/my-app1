@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './components/login/login.component';
 import { SingupComponent } from './components/singup/singup.component';
 import { ChangePasswordComponent } from './components/change-password/change-password.component';
+import { AuthComponent } from './auth.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -10,10 +12,13 @@ import { ChangePasswordComponent } from './components/change-password/change-pas
   declarations: [
     LoginComponent,
     SingupComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    AuthComponent,
+
   ],
   imports: [
-    CommonModule
+    CommonModule,    AppRoutingModule,
+
   ]
 })
 export class AuthModule { }
