@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AddBookComponent } from './add-book/add-book.component';
 import { DeleteBookComponent } from './component/delete-book/delete-book.component';
+import { AddBookComponent } from './component/add-book/add-book.component';
 
 
 
