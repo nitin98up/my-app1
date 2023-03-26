@@ -5,6 +5,9 @@ import { SingupComponent } from './components/singup/singup.component';
 import { ChangePasswordComponent } from './components/change-password/change-password.component';
 import { AuthComponent } from './auth.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { AuthRoutingModule } from './auth-routing.module';
+import { UserRoutingModule } from '../user/user-routing.module';
+import { UserComponent } from '../user/user.component';
 
 
 
@@ -14,10 +17,11 @@ import { AppRoutingModule } from '../app-routing.module';
     SingupComponent,
     ChangePasswordComponent,
     AuthComponent,
+    UserComponent,
 
   ],
   imports: [
-    CommonModule,    AppRoutingModule,
+    CommonModule,    AppRoutingModule, AuthRoutingModule, UserRoutingModule,
 
   ]
 })
