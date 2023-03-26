@@ -1,8 +1,19 @@
-<h1>Hello {{name}}</h1>
+<!-- <h1>Hello {{name}}</h1>
 
-
-<p>{{empList}}</p>
+ <p>{{empList}}</p>
 
 <input type="text" (change)="txtChange()"  [class.success]="isDisabled"> <br/>
 <input type="text" (change) ="txtChange()" [class]="myClass">
 <input type="button" value="Save" (click)="clickSave()" (mouseover)="over()" [disabled]="isDisabled">
+
+<p>attribute binding</p>
+<img [attr.src]="src" [attr.width]="width">
+<input type="text" name="" id="">  -->
+
+
+<br/>
+<p>template</p>
+<input type="text" value="a"  #myText>
+<br>
+{{myText.value}}
+<button [disabled]="! myText.value">Save</button>
